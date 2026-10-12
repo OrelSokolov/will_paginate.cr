@@ -1,0 +1,16 @@
+name: will_paginate_cr
+version: 0.1.0
+crystal: ">= 1.21.0"
+description: |
+  Порт will_paginate 4.0.1 (github.com/mislav/will_paginate) на Crystal — 1:1 API.
+  Пагинация: WillPaginate::Collection, Array#paginate, вью-хелперы
+  will_paginate / page_entries_info + LinkRenderer.
+
+authors:
+  - oleg
+
+development_dependencies:
+  action_view_cr:
+    path: ../../rails.cr/action_view.cr
+  active_record_cr:
+    path: ../../rails.cr/active_record.cr

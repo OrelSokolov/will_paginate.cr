@@ -1,0 +1,62 @@
+pn_inspect	page 3
+pn_to_i	3
+pn_eq	true
+pn_cmp	-1
+pn_to_s	3
+pn_offset	offset 20
+pn_offset_to_i	20
+pn_string_coerce	page 3
+pn_invalid_zero	range_error=true: invalid page: 0 invalid_page=true
+pn_invalid_offset	range_error=true: invalid offset: -5 invalid_page=true
+pn_invalid_string	invalid_page=true
+pn_invalid_nil	invalid_page=true
+per_page_default	30
+per_page_set	7
+per_page_used	7
+coll_basic	1/10/26/3/0/nil/2/false
+coll_oob	5/10/26/3/40/4/nil/true
+coll_empty	1/10/0/1/0/nil/nil/false
+coll_replace	[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+coll_guess_short	3/3
+coll_guess_page2	15/5/false
+coll_guess_nil	nil/0
+coll_guess_full_page	nil/10
+coll_guess_page1_full	nil/10
+arr_paginate_1	[1, 2]/5/3/1
+arr_paginate_2	[3, 4]/1/3
+arr_paginate_3	[5]/2/nil
+arr_paginate_total	[1, 2]/99/50/false
+arr_paginate_oob	[]/true/196
+arr_paginate_strings	["a", "b"]
+wp_basic	<div role="navigation" aria-label="Pagination" class="pagination"><span class="previous_page disabled" aria-label="Previous page">&#8592; Previous</span> <em class="current" aria-label="Page 1" aria-current="page">1</em> <a rel="next" aria-label="Page 2" href="/foo?page=2">2</a> <a aria-label="Page 3" href="/foo?page=3">3</a> <a class="next_page" aria-label="Next page" rel="next" href="/foo?page=2">Next &#8594;</a></div>
+wp_page2	<div role="navigation" aria-label="Pagination" class="pagination"><a class="previous_page" aria-label="Previous page" rel="prev" href="/foo?page=1">&#8592; Previous</a> <a rel="prev" aria-label="Page 1" href="/foo?page=1">1</a> <em class="current" aria-label="Page 2" aria-current="page">2</em> <a rel="next" aria-label="Page 3" href="/foo?page=3">3</a> <a class="next_page" aria-label="Next page" rel="next" href="/foo?page=3">Next &#8594;</a></div>
+wp_gaps	<div role="navigation" aria-label="Pagination" class="pagination"><a class="previous_page" aria-label="Previous page" rel="prev" href="/foo?page=14">&#8592; Previous</a> <a aria-label="Page 1" href="/foo?page=1">1</a> <a aria-label="Page 2" href="/foo?page=2">2</a> <span class="gap">&hellip;</span> <a aria-label="Page 11" href="/foo?page=11">11</a> <a aria-label="Page 12" href="/foo?page=12">12</a> <a aria-label="Page 13" href="/foo?page=13">13</a> <a rel="prev" aria-label="Page 14" href="/foo?page=14">14</a> <em class="current" aria-label="Page 15" aria-current="page">15</em> <a rel="next" aria-label="Page 16" href="/foo?page=16">16</a> <a aria-label="Page 17" href="/foo?page=17">17</a> <a aria-label="Page 18" href="/foo?page=18">18</a> <a aria-label="Page 19" href="/foo?page=19">19</a> <span class="gap">&hellip;</span> <a aria-label="Page 29" href="/foo?page=29">29</a> <a aria-label="Page 30" href="/foo?page=30">30</a> <a class="next_page" aria-label="Next page" rel="next" href="/foo?page=16">Next &#8594;</a></div>
+wp_first	<div role="navigation" aria-label="Pagination" class="pagination"><span class="previous_page disabled" aria-label="Previous page">&#8592; Previous</span> <em class="current" aria-label="Page 1" aria-current="page">1</em> <a rel="next" aria-label="Page 2" href="/foo?page=2">2</a> <a aria-label="Page 3" href="/foo?page=3">3</a> <a aria-label="Page 4" href="/foo?page=4">4</a> <a aria-label="Page 5" href="/foo?page=5">5</a> <a aria-label="Page 6" href="/foo?page=6">6</a> <a aria-label="Page 7" href="/foo?page=7">7</a> <a aria-label="Page 8" href="/foo?page=8">8</a> <a aria-label="Page 9" href="/foo?page=9">9</a> <span class="gap">&hellip;</span> <a aria-label="Page 29" href="/foo?page=29">29</a> <a aria-label="Page 30" href="/foo?page=30">30</a> <a class="next_page" aria-label="Next page" rel="next" href="/foo?page=2">Next &#8594;</a></div>
+wp_last	<div role="navigation" aria-label="Pagination" class="pagination"><a class="previous_page" aria-label="Previous page" rel="prev" href="/foo?page=29">&#8592; Previous</a> <a aria-label="Page 1" href="/foo?page=1">1</a> <a aria-label="Page 2" href="/foo?page=2">2</a> <span class="gap">&hellip;</span> <a aria-label="Page 22" href="/foo?page=22">22</a> <a aria-label="Page 23" href="/foo?page=23">23</a> <a aria-label="Page 24" href="/foo?page=24">24</a> <a aria-label="Page 25" href="/foo?page=25">25</a> <a aria-label="Page 26" href="/foo?page=26">26</a> <a aria-label="Page 27" href="/foo?page=27">27</a> <a aria-label="Page 28" href="/foo?page=28">28</a> <a rel="prev" aria-label="Page 29" href="/foo?page=29">29</a> <em class="current" aria-label="Page 30" aria-current="page">30</em> <span class="next_page disabled" aria-label="Next page">Next &#8594;</span></div>
+wp_second	<div role="navigation" aria-label="Pagination" class="pagination"><a class="previous_page" aria-label="Previous page" rel="prev" href="/foo?page=1">&#8592; Previous</a> <a rel="prev" aria-label="Page 1" href="/foo?page=1">1</a> <em class="current" aria-label="Page 2" aria-current="page">2</em> <a rel="next" aria-label="Page 3" href="/foo?page=3">3</a> <a aria-label="Page 4" href="/foo?page=4">4</a> <a aria-label="Page 5" href="/foo?page=5">5</a> <a aria-label="Page 6" href="/foo?page=6">6</a> <a aria-label="Page 7" href="/foo?page=7">7</a> <a aria-label="Page 8" href="/foo?page=8">8</a> <a aria-label="Page 9" href="/foo?page=9">9</a> <span class="gap">&hellip;</span> <a aria-label="Page 29" href="/foo?page=29">29</a> <a aria-label="Page 30" href="/foo?page=30">30</a> <a class="next_page" aria-label="Next page" rel="next" href="/foo?page=3">Next &#8594;</a></div>
+wp_window_shift	<div role="navigation" aria-label="Pagination" class="pagination"><a class="previous_page" aria-label="Previous page" rel="prev" href="/foo?page=4">&#8592; Previous</a> <a aria-label="Page 1" href="/foo?page=1">1</a> <a aria-label="Page 2" href="/foo?page=2">2</a> <a aria-label="Page 3" href="/foo?page=3">3</a> <a rel="prev" aria-label="Page 4" href="/foo?page=4">4</a> <em class="current" aria-label="Page 5" aria-current="page">5</em> <a rel="next" aria-label="Page 6" href="/foo?page=6">6</a> <a aria-label="Page 7" href="/foo?page=7">7</a> <a aria-label="Page 8" href="/foo?page=8">8</a> <a aria-label="Page 9" href="/foo?page=9">9</a> <a aria-label="Page 10" href="/foo?page=10">10</a> <a class="next_page" aria-label="Next page" rel="next" href="/foo?page=6">Next &#8594;</a></div>
+wp_labels	<div role="navigation" aria-label="Pagination" class="pagination"><a class="previous_page" aria-label="Previous page" rel="prev" href="/foo?page=1">&laquo;</a> <a rel="prev" aria-label="Page 1" href="/foo?page=1">1</a> <em class="current" aria-label="Page 2" aria-current="page">2</em> <a rel="next" aria-label="Page 3" href="/foo?page=3">3</a> <a class="next_page" aria-label="Next page" rel="next" href="/foo?page=3">&raquo;</a></div>
+wp_page_links_false	<div role="navigation" aria-label="Pagination" class="pagination"><a class="previous_page" aria-label="Previous page" rel="prev" href="/foo?page=14">&#8592; Previous</a> <a class="next_page" aria-label="Next page" rel="next" href="/foo?page=16">Next &#8594;</a></div>
+wp_container_false	<span class="previous_page disabled" aria-label="Previous page">&#8592; Previous</span> <em class="current" aria-label="Page 1" aria-current="page">1</em> <a rel="next" aria-label="Page 2" href="/foo?page=2">2</a> <a aria-label="Page 3" href="/foo?page=3">3</a> <a class="next_page" aria-label="Next page" rel="next" href="/foo?page=2">Next &#8594;</a>
+wp_class	<div role="navigation" aria-label="Pagination" class="pagi"><span class="previous_page disabled" aria-label="Previous page">&#8592; Previous</span> <em class="current" aria-label="Page 1" aria-current="page">1</em> <a rel="next" aria-label="Page 2" href="/foo?page=2">2</a> <a aria-label="Page 3" href="/foo?page=3">3</a> <a class="next_page" aria-label="Next page" rel="next" href="/foo?page=2">Next &#8594;</a></div>
+wp_attrs	<div role="navigation" aria-label="Pagination" class="pagination" id="abc" style="color:blue"><span class="previous_page disabled" aria-label="Previous page">&#8592; Previous</span> <em class="current" aria-label="Page 1" aria-current="page">1</em> <a rel="next" aria-label="Page 2" href="/foo?page=2">2</a> <a aria-label="Page 3" href="/foo?page=3">3</a> <a class="next_page" aria-label="Next page" rel="next" href="/foo?page=2">Next &#8594;</a></div>
+wp_separator	<div role="navigation" aria-label="Pagination" class="pagination"><span class="previous_page disabled" aria-label="Previous page">&#8592; Previous</span> | <em class="current" aria-label="Page 1" aria-current="page">1</em> | <a rel="next" aria-label="Page 2" href="/foo?page=2">2</a> | <a aria-label="Page 3" href="/foo?page=3">3</a> | <a class="next_page" aria-label="Next page" rel="next" href="/foo?page=2">Next &#8594;</a></div>
+wp_windows	<div role="navigation" aria-label="Pagination" class="pagination"><a class="previous_page" aria-label="Previous page" rel="prev" href="/foo?page=4">&#8592; Previous</a> <a aria-label="Page 1" href="/foo?page=1">1</a> <span class="gap">&hellip;</span> <a rel="prev" aria-label="Page 4" href="/foo?page=4">4</a> <em class="current" aria-label="Page 5" aria-current="page">5</em> <a rel="next" aria-label="Page 6" href="/foo?page=6">6</a> <span class="gap">&hellip;</span> <a aria-label="Page 10" href="/foo?page=10">10</a> <a class="next_page" aria-label="Next page" rel="next" href="/foo?page=6">Next &#8594;</a></div>
+wp_param_name	<div role="navigation" aria-label="Pagination" class="pagination"><span class="previous_page disabled" aria-label="Previous page">&#8592; Previous</span> <em class="current" aria-label="Page 1" aria-current="page">1</em> <a rel="next" aria-label="Page 2" href="/foo?p=2">2</a> <a aria-label="Page 3" href="/foo?p=3">3</a> <a class="next_page" aria-label="Next page" rel="next" href="/foo?p=2">Next &#8594;</a></div>
+wp_single_page	nil
+wp_renderer_instance	<div role="navigation" aria-label="Pagination" class="pagination"><span class="previous_page disabled" aria-label="Previous page">&#8592; Previous</span> <em class="current" aria-label="Page 1" aria-current="page">1</em> <a rel="next" aria-label="Page 2" href="/foo?page=2">2</a> <a aria-label="Page 3" href="/foo?page=3">3</a> <a class="next_page" aria-label="Next page" rel="next" href="/foo?page=2">Next &#8594;</a></div>
+wp_aria_current	true
+wp_no_renderer	ArgumentError: :renderer not specified
+pei_raise_no_pluralize	jump_error=true: no block given (yield)
+pei_zero_html	No entries found
+pei_zero_text	No entries found
+pei_one_html	Displaying <b>1</b> entry
+pei_one_text	Displaying 1 entry
+pei_all_html	Displaying entries <b>1&nbsp;-&nbsp;10</b> of <b>26</b> in total
+pei_all_text	Displaying entries 1 - 10 of 26 in total
+pei_multi_html	Displaying entries <b>11&nbsp;-&nbsp;20</b> of <b>26</b> in total
+pei_multi_text	Displaying entries 11 - 20 of 26 in total
+pei_model	Displaying posts <b>11&nbsp;-&nbsp;20</b> of <b>26</b> in total
+pei_model_text	Displaying posts 11 - 20 of 26 in total
+pei_all_fit_html	Displaying <b>all&nbsp;26</b> entries
+pei_all_fit_text	Displaying all 26 entries

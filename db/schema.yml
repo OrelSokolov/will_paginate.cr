@@ -1,0 +1,45 @@
+---
+posts:
+  columns:
+  - name: id
+    type: int8
+    nullable: 'NO'
+    default: nextval('posts_id_seq'::regclass)
+  - name: title
+    type: varchar
+    nullable: 'YES'
+    default:
+  - name: views
+    type: int8
+    nullable: 'NO'
+    default: '0'
+  - name: created_at
+    type: timestamp
+    nullable: 'YES'
+    default:
+  - name: updated_at
+    type: timestamp
+    nullable: 'YES'
+    default:
+comments:
+  columns:
+  - name: id
+    type: int8
+    nullable: 'NO'
+    default: nextval('comments_id_seq'::regclass)
+  - name: post_id
+    type: int8
+    nullable: 'NO'
+    default:
+  - name: body
+    type: text
+    nullable: 'YES'
+    default:
+  - name: created_at
+    type: timestamp
+    nullable: 'YES'
+    default:
+  - name: updated_at
+    type: timestamp
+    nullable: 'YES'
+    default:
